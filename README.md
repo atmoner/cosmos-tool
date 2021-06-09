@@ -14,3 +14,37 @@
 |--|--|
  
 
+
+## Prerequisites
+
+node version >=14.0.0
+
+## Installation
+
+```sh
+git clone https://github.com/atmoner/cosmos-tool.git
+cd cosmos-tool
+npm i
+```
+## Config
+```sh
+nano config.json
+```
+Edit this part with your value:
+```
+{
+    "mnemonic":"",
+    "validaorAddress":"",
+    "chainId":"", 
+    "lcdUrl":"",
+    "denom":"",
+    "prefix":"",
+    "feeAmount":5000,
+    "gasLimit":100000,
+    "memo":"Send from Cosmos-Tool"
+}
+```
+## Run it (server side)
+```
+node app.js
+```
