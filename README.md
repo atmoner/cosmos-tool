@@ -45,7 +45,7 @@ Edit this part with your value:
     "memo":"Send from Cosmos-Tool"
 }
 ```
-## Run it (server side)
+## Run it 
 ```
 node app.js
 ```
@@ -56,7 +56,8 @@ For the improvement of the software, do not hesitate to make your proposal in th
 
 ## To Do 
  - [ ] Main menu
-   - [ ] redelegate
+   - [ ] Redelegate
+   - [ ] List all validator
    - [ ] Add generate adresse
    - [ ] Multi Tx
    - [ ] IBC
