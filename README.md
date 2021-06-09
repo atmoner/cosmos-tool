@@ -18,7 +18,7 @@
 
 ## Prerequisites
 
-node version >=14.0.0
+```node version >=14.0.0```
 
 ## Installation
 
