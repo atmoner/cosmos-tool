@@ -49,3 +49,14 @@ Edit this part with your value:
 ```
 node app.js
 ```
+
+## Development setup
+  
+For the improvement of the software, do not hesitate to make your proposal in the support section 
+
+## To Do 
+ - [ ] Main menu
+ 	 - [ ] Add generate adresse
+	 - [ ] Multi Tx
+   - [ ] IBC
+ 
