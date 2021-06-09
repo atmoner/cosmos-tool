@@ -1,0 +1,27 @@
+{
+  "name": "cosmos-tool",
+  "version": "1.0.0",
+  "description": "Cli tool for any cosmos blockchain",
+  "main": "app.js",
+  "bin": {
+    "cosmos-tool": "app.js"
+  },
+  "keywords": [
+    "Bitcanna",
+    "Cosmos",
+    "Cryptomonaie",
+    "Blockchain"
+  ],
+  "author": "atmon3r",
+  "license": "MIT",
+  "dependencies": {
+    "@cosmostation/cosmosjs": "^0.9.5",
+    "bip39": "^3.0.4",
+    "bitcore-mnemonic": "^8.25.8",
+    "chalk": "^4.1.1",
+    "cli-table": "^0.3.6",
+    "figlet": "^1.5.0",
+    "get-json": "^1.0.1",
+    "inquirer": "^8.0.0"
+  }
+}
