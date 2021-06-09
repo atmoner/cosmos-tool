@@ -56,7 +56,8 @@ For the improvement of the software, do not hesitate to make your proposal in th
 
 ## To Do 
  - [ ] Main menu
- 	 - [ ] Add generate adresse
-	 - [ ] Multi Tx
+   - [ ] redelegate
+   - [ ] Add generate adresse
+   - [ ] Multi Tx
    - [ ] IBC
  
