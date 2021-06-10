@@ -1,6 +1,6 @@
 {
     "mnemonic":"",
-    "validaorAddress":"",
+    "validatorAddress":"",
     "chainId":"", 
     "lcdUrl":"",
     "denom":"",
