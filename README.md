@@ -31,7 +31,7 @@ npm i
 ```sh
 nano config.json
 ```
-Edit this part with your value:
+Edit this part with your value:  
 ```
 {
     "mnemonic":"",
@@ -44,7 +44,9 @@ Edit this part with your value:
     "gasLimit":100000,
     "memo":"Send from Cosmos-Tool"
 }
-```
+```  
+Example of config.json: <a href="https://github.com/atmoner/cosmos-tool/tree/main/config-example">/config-example</a>  
+
 ## Run it 
 ```
 node app.js
