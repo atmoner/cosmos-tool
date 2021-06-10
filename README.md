@@ -35,7 +35,7 @@ Edit this part with your value:
 ```
 {
     "mnemonic":"",
-    "validaorAddress":"",
+    "validatorAddress":"",
     "chainId":"", 
     "lcdUrl":"",
     "denom":"",
