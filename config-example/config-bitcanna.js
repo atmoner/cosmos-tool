@@ -1,6 +1,6 @@
 {
-	"mnemonic":"**** *** ** ***** ***** *** ",
-	"validatorAddress":"bcnavaloper******************",
+    "mnemonic":"**** *** ** ***** ***** *** ",
+    "validatorAddress":"bcnavaloper******************",
     "chainId":"bitcanna-testnet-2", 
     "lcdUrl":"https://cosmos-testnet.bitcanna.io",
     "denom":"ubcna",
