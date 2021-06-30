@@ -52,6 +52,23 @@ Example of config.json: <a href="https://github.com/atmoner/cosmos-tool/tree/mai
 node app.js
 ```
 
+## Known problem 
+
+### Problem 
+
+When launching cosmos-tool, you should see a warnig appear, nothing serious!
+```
+WARN deprecated @cosmostation/cosmosjs@0.9.x: You needs to upgrade to @cosmostation/cosmosjs above 0.10.0+ : 1) Proper nodejs v14+ support 2) 0.10.0+ supports protobuf signing for cosmos-sdk 0.40.0+
+```
+
+### Solution
+
+To remove this warning, edit the file ```node_modules/@cosmostation/cosmosjs/src/index.js```  
+Remove or comment line 29, like this:  
+
+![image](https://user-images.githubusercontent.com/1071490/124016013-b18c7b00-d9d4-11eb-8742-e143a6c181f4.png)
+
+
 ## Development setup
   
 For the improvement of the software, do not hesitate to make your proposal in the support section 
