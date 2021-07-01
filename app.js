@@ -220,7 +220,7 @@ function Reward(adresseTo) {
 	})
 }
 
-function sendTx(amount, adresseTo) {
+function sendTx(amount, adresseTo, fee, gas) {
 	// Generate MsgSend transaction and broadcast
 	cosmosTool.getAccounts(address).then(data => {
 		let stdSignMsg = cosmosTool.newStdMsg({
@@ -240,7 +240,7 @@ function sendTx(amount, adresseTo) {
 				}
 			],
 			chain_id: chainId,
-			fee: { amount: [ { amount: String(config.feeAmount), denom: config.denom } ], gas: String(config.gasLimit) },
+			fee: { amount: [ { amount: String(fee), denom: config.denom } ], gas: String(gas) },
 			memo: MessageMemo,
 			account_number: String(data.result.value.account_number),
 			sequence: String(data.result.value.sequence)
@@ -286,7 +286,26 @@ const askSend = () => {
 	{
 		type: 'input',
 		name: 'adresse',
-		message: "Adresse?"
+		message: "Adresse?",
+		default: function () {
+			return 'bcna1dwkhyqsgr6mxa2qf70rv5mpdch9vr345tsmlpm';
+		},
+	},		
+	{
+		type: 'input',
+		name: 'fee',
+		message: "Set fee",
+		default: function () {
+			return '2000';
+		},
+	},
+	{
+		type: 'input',
+		name: 'gas',
+		message: "Set gas",
+		default: function () {
+			return '200000';
+		},		
 	},		
 	];
 	return inquirer.prompt(questions);
@@ -373,7 +392,7 @@ const run = async () => {
 	if (answers.main === 'Send') {
 		const answersSend = await askSend();
 		if (answersSend.amout) {
-			sendTx(answersSend.amout, answersSend.adresse);
+			sendTx(answersSend.amout, answersSend.adresse, answersSend.fee, answersSend.gas);
 		}		
 	} else if (answers.main === 'Edit Validator') {
 		const answersEV = await askEditValidator();
