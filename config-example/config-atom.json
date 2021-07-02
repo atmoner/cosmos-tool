@@ -1,0 +1,11 @@
+{
+	"mnemonic":"**** *** ** ***** ***** *** ",
+	"validatorAddress":"**** *** ** ***** ***** *** ",
+	"chainId":"cosmoshub-4", 
+	"lcdUrl":"",
+	"denom":"uatom",
+	"prefix":"cosmos",
+  "feeAmount":5000,
+  "gasLimit":200000,
+  "memo":"Send from Cosmos-Tool"
+}
